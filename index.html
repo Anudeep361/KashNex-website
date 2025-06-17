@@ -2,74 +2,126 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Kashnex - Coming Soon</title>
+  <title>Kashnex - AI Solutions for Business</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f8fafc;
-      color: #222;
+      font-family: 'Inter', sans-serif;
       margin: 0;
-      text-align: center;
+      padding: 0;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #f1f5f9;
       display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      min-height: 100vh;
     }
+
     .container {
-      max-width: 400px;
-      margin: 40px auto;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-      padding: 2em;
+      background-color: #1e293b;
+      max-width: 500px;
+      width: 90%;
+      padding: 2.5em;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      text-align: center;
+      animation: fadeIn 1.5s ease;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     h1 {
-      margin-top: 0;
-      color: #3b82f6;
+      color: #38bdf8;
+      font-size: 2.2em;
+      margin-bottom: 0.25em;
     }
+
     .coming-soon {
-      font-size: 2em;
-      margin-bottom: 1em;
+      font-size: 1.6em;
+      font-weight: 600;
+      color: #e2e8f0;
+      margin-bottom: 0.5em;
     }
+
+    p.description {
+      font-size: 1em;
+      line-height: 1.6;
+      color: #cbd5e1;
+    }
+
+    .intro {
+      font-size: 1em;
+      color: #94a3b8;
+      margin-top: 1.2em;
+    }
+
     form {
       display: flex;
       flex-direction: column;
       gap: 1em;
       margin-top: 2em;
     }
+
     input, textarea {
-      padding: 0.75em;
-      border-radius: 6px;
-      border: 1px solid #cbd5e1;
+      padding: 0.8em;
+      border-radius: 8px;
+      border: 1px solid #475569;
+      background: #0f172a;
+      color: #f1f5f9;
       font-size: 1em;
     }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #94a3b8;
+    }
+
     button {
-      background: #3b82f6;
-      color: #fff;
+      background: #38bdf8;
+      color: #0f172a;
+      font-weight: bold;
       border: none;
-      border-radius: 6px;
-      padding: 0.75em;
+      border-radius: 8px;
+      padding: 0.9em;
       font-size: 1em;
       cursor: pointer;
+      transition: background 0.3s ease;
     }
+
     button:hover {
-      background: #2563eb;
+      background: #0ea5e9;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 2em 1.2em;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Kashnex</h1>
-    <div class="coming-soon">Coming Soon</div>
-    <p>We’re working hard to launch our website.<br>Stay tuned!</p>
+    <div class="coming-soon">Empowering Business with AI</div>
+    <p class="description">
+      We are building intelligent solutions that drive innovation and efficiency.<br>
+      From AI-powered analytics to automation systems – Kashnex is your trusted technology partner.
+    </p>
+    <p class="intro">
+      🚀 Our full site is launching soon. Stay tuned and let's shape the future together!
+    </p>
+
     <form action="mailto:info@kashnex.com" method="POST" enctype="text/plain">
-      <h2>Contact Us</h2>
+      <h2 style="color: #f8fafc;">Contact Us</h2>
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" rows="3" placeholder="Your Message"></textarea>
-      <button type="submit">Send</button>
+      <button type="submit">Send Message</button>
     </form>
   </div>
 </body>
