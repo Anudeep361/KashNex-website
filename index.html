@@ -1,128 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-  <meta charset="UTF-8">
-  <title>Kashnex - AI Solutions for Business</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KashNex.com — Empowering Your Future with AI & Strategic Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
-      color: #f1f5f9;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+    /* Custom scrollbar for modern look */
+    ::-webkit-scrollbar {
+      width: 8px;
     }
-
-    .container {
-      background-color: #1e293b;
-      max-width: 500px;
-      width: 90%;
-      padding: 2.5em;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-      text-align: center;
-      animation: fadeIn 1.5s ease;
+    ::-webkit-scrollbar-thumb {
+      background-color: #4B5563; /* gray-600 */
+      border-radius: 4px;
     }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    h1 {
-      color: #38bdf8;
-      font-size: 2.2em;
-      margin-bottom: 0.25em;
-    }
-
-    .coming-soon {
-      font-size: 1.6em;
-      font-weight: 600;
-      color: #e2e8f0;
-      margin-bottom: 0.5em;
-    }
-
-    p.description {
-      font-size: 1em;
-      line-height: 1.6;
-      color: #cbd5e1;
-    }
-
-    .intro {
-      font-size: 1em;
-      color: #94a3b8;
-      margin-top: 1.2em;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1em;
-      margin-top: 2em;
-    }
-
-    input, textarea {
-      padding: 0.8em;
-      border-radius: 8px;
-      border: 1px solid #475569;
-      background: #0f172a;
-      color: #f1f5f9;
-      font-size: 1em;
-    }
-
-    input::placeholder,
-    textarea::placeholder {
-      color: #94a3b8;
-    }
-
-    button {
-      background: #38bdf8;
-      color: #0f172a;
-      font-weight: bold;
-      border: none;
-      border-radius: 8px;
-      padding: 0.9em;
-      font-size: 1em;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    button:hover {
-      background: #0ea5e9;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 2em 1.2em;
-      }
+    ::-webkit-scrollbar-track {
+      background: transparent;
     }
   </style>
 </head>
-<body>
-  <div class="container">
-    <h1>Kashnex</h1>
-    <div class="coming-soon">Empowering Business with AI</div>
-    <p class="description">
-      We are building intelligent solutions that drive innovation and efficiency.<br>
-      From AI-powered analytics to automation systems – Kashnex is your trusted technology partner.
-    </p>
-    <p class="intro">
-      🚀 Our full site is launching soon. Stay tuned and let's shape the future together!
-    </p>
+<body class="bg-gray-50 font-sans text-gray-900 leading-relaxed">
 
-    <form action="mailto:info@kashnex.com" method="POST" enctype="text/plain">
-      <h2 style="color: #f8fafc;">Contact Us</h2>
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="3" placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
+  <!-- Navbar -->
+  <header class="bg-gray-900 text-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex items-center justify-between px-6 py-4">
+      <a href="#" class="flex items-center space-x-3">
+        <img src="logo.jpg" alt="KashNex Logo" class="h-12 w-auto" />
+        <span class="text-3xl font-bold tracking-tight">KashNex<span class="text-gray-400">.com</span></span>
+      </a>
+      <nav class="hidden md:flex space-x-10 font-semibold text-gray-300">
+        <a href="#about" class="hover:text-white transition">About Us</a>
+        <a href="#services" class="hover:text-white transition">Services</a>
+        <a href="#solutions" class="hover:text-white transition">Solutions</a>
+        <a href="#careers" class="hover:text-white transition">Careers</a>
+        <a href="#contact" class="hover:text-white transition">Contact</a>
+      </nav>
+      <a href="mailto:contact@kashnex.com" class="hidden md:inline-block bg-gray-700 hover:bg-gray-800 text-white font-semibold px-6 py-2 rounded-lg transition">
+        Get in Touch
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white text-center py-28 px-6">
+    <h1 class="max-w-4xl mx-auto text-5xl font-extrabold leading-tight mb-6 drop-shadow-lg">
+      KashNex: AI-Powered Innovation for Next-Level Business Growth
+    </h1>
+    <p class="max-w-3xl mx-auto text-xl font-light mb-12">
+      We deliver tailored AI solutions, strategic consulting, and digital transformation services to empower enterprises and startups worldwide.
+    </p>
+    <a href="#contact" class="inline-block bg-white text-gray-900 font-semibold px-10 py-4 rounded-full shadow-lg hover:shadow-xl transition">
+      Request a Consultation
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto px-6 py-20 bg-white text-gray-900">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6">About KashNex</h2>
+      <p class="text-lg leading-relaxed mb-8">
+        At KashNex, we combine deep expertise in Artificial Intelligence with strategic business consulting to transform your vision into reality.
+        Our mission is to accelerate innovation and maximize operational efficiency through customized AI-driven solutions tailored to your unique needs.
+      </p>
+      <p class="text-lg leading-relaxed">
+        Founded in 2020, KashNex has empowered clients across industries including finance, healthcare, education, and technology.  
+        We believe in building lasting partnerships that fuel growth, adaptability, and long-term success.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-100 py-20 px-6 text-gray-900">
+    <div class="container mx-auto max-w-6xl">
+      <h2 class="text-4xl font-bold text-center mb-12">Our Core Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+        <div class="bg-white p-10 rounded-xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold text-gray-900 mb-4">AI & Machine Learning</h3>
+          <p class="leading-relaxed">
+            Custom AI models and automation solutions designed to optimize workflows, increase revenue, and unlock insights from your data.
+          </p>
+        </div>
+
+        <div class="bg-white p-10 rounded-xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold text-gray-900 mb-4">Strategic Consulting</h3>
+          <p class="leading-relaxed">
+            Expert guidance to align your technology initiatives with business goals and create actionable roadmaps for digital transformation.
+          </p>
+        </div>
+
+        <div class="bg-white p-10 rounded-xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold text-gray-900 mb-4">Data Analytics & Insights</h3>
+          <p class="leading-relaxed">
+            Advanced analytics solutions to uncover trends, monitor KPIs, and support data-driven decision-making across your organization.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Section -->
+  <section id="solutions" class="container mx-auto px-6 py-20 bg-white text-gray-900">
+    <h2 class="text-4xl font-bold text-center mb-12">Industries & Solutions</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-14 max-w-6xl mx-auto">
+
+      <div class="bg-gray-50 rounded-xl p-10 shadow-md hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Finance & Fintech</h3>
+        <p class="leading-relaxed">
+          AI-powered risk analysis, fraud detection, algorithmic trading strategies, and personalized financial planning tools.
+        </p>
+      </div>
+
+      <div class="bg-gray-50 rounded-xl p-10 shadow-md hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Healthcare & Life Sciences</h3>
+        <p class="leading-relaxed">
+          Intelligent diagnostics, patient data analytics, workflow automation, and AI-driven clinical decision support systems.
+        </p>
+      </div>
+
+      <div class="bg-gray-50 rounded-xl p-10 shadow-md hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Education & E-Learning</h3>
+        <p class="leading-relaxed">
+          Personalized learning platforms, predictive analytics to improve student outcomes, and administrative process automation.
+        </p>
+      </div>
+
+      <div class="bg-gray-50 rounded-xl p-10 shadow-md hover:shadow-lg transition">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Retail & E-Commerce</h3>
+        <p class="leading-relaxed">
+          Customer behavior prediction, inventory optimization, personalized marketing, and sales forecasting solutions.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Careers Section -->
+  <section id="careers" class="bg-gray-900 text-gray-200 py-20 px-6">
+    <div class="container mx-auto max-w-4xl text-center">
+      <h2 class="text-4xl font-bold mb-6">Join Our Team</h2>
+      <p class="mb-8 max-w-xl mx-auto">
+        Are you passionate about AI and innovation? At KashNex, we value creativity, collaboration, and continuous learning.  
+        Explore our current openings and build a career that makes an impact.
+      </p>
+      <a href="mailto:careers@kashnex.com" class="inline-block bg-gray-700 hover:bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold transition">
+        View Open Positions
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container mx-auto px-6 py-20 max-w-4xl text-center text-gray-900">
+    <h2 class="text-4xl font-bold mb-6">Get in Touch</h2>
+    <p class="mb-8 max-w-3xl mx-auto leading-relaxed">
+      Whether you have a project idea, partnership inquiry, or just want to learn more, we’d love to hear from you.
+    </p>
+    <a href="mailto:info@kashnex.com" class="inline-block bg-gray-800 hover:bg-gray-900 text-white font-semibold px-10 py-4 rounded-full transition">
+      contact@kashnex.com
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 py-8 text-center text-sm">
+    <p>&copy; 2025 KashNex. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
