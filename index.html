@@ -1,23 +1,38 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>KashNex — Empowering Your Future with AI & Strategic Solutions</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Custom scrollbar for modern look */
     ::-webkit-scrollbar {
       width: 8px;
     }
     ::-webkit-scrollbar-thumb {
-      background-color: #4B5563; /* gray-600 */
+      background-color: #4B5563;
       border-radius: 4px;
     }
     ::-webkit-scrollbar-track {
       background: transparent;
     }
+    .logo-bg {
+      background: radial-gradient(circle at center, #e0e3e8 0%, #f9fafb 100%);
+    }
   </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "KashNex",
+      "url": "https://www.kashnex.com",
+      "logo": "https://www.kashnex.com/logo.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/company/kashnex",
+        "https://www.instagram.com/kash.nex"
+      ]
+    }
+  </script>
 </head>
 <body class="bg-gray-50 font-sans text-gray-900 leading-relaxed">
 
@@ -25,8 +40,10 @@
   <header class="bg-gray-900 text-white shadow-md sticky top-0 z-50">
     <div class="container mx-auto flex items-center justify-between px-6 py-4">
       <a href="#" class="flex items-center space-x-3">
-        <img src="logo.jpg" alt="KashNex Logo" class="h-12 w-auto" />
-        <span class="text-3xl font-bold tracking-tight">KashNex<span>
+        <div class="p-1 rounded-lg logo-bg">
+          <img src="logo.jpg" alt="KashNex Logo" class="h-12 w-auto" />
+        </div>
+        <span class="text-3xl font-bold tracking-tight">KashNex</span>
       </a>
       <nav class="hidden md:flex space-x-10 font-semibold text-gray-300">
         <a href="#about" class="hover:text-white transition">About Us</a>
@@ -74,28 +91,18 @@
     <div class="container mx-auto max-w-6xl">
       <h2 class="text-4xl font-bold text-center mb-12">Our Core Services</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-
         <div class="bg-white p-10 rounded-xl shadow-md hover:shadow-xl transition">
-          <h3 class="text-2xl font-semibold text-gray-900 mb-4">AI & Machine Learning</h3>
-          <p class="leading-relaxed">
-            Custom AI models and automation solutions designed to optimize workflows, increase revenue, and unlock insights from your data.
-          </p>
+          <h3 class="text-2xl font-semibold mb-4">AI & Machine Learning</h3>
+          <p>Custom AI models and automation solutions designed to optimize workflows, increase revenue, and unlock insights from your data.</p>
         </div>
-
         <div class="bg-white p-10 rounded-xl shadow-md hover:shadow-xl transition">
-          <h3 class="text-2xl font-semibold text-gray-900 mb-4">Strategic Consulting</h3>
-          <p class="leading-relaxed">
-            Expert guidance to align your technology initiatives with business goals and create actionable roadmaps for digital transformation.
-          </p>
+          <h3 class="text-2xl font-semibold mb-4">Strategic Consulting</h3>
+          <p>Expert guidance to align your technology initiatives with business goals and create actionable roadmaps for digital transformation.</p>
         </div>
-
         <div class="bg-white p-10 rounded-xl shadow-md hover:shadow-xl transition">
-          <h3 class="text-2xl font-semibold text-gray-900 mb-4">Data Analytics & Insights</h3>
-          <p class="leading-relaxed">
-            Advanced analytics solutions to uncover trends, monitor KPIs, and support data-driven decision-making across your organization.
-          </p>
+          <h3 class="text-2xl font-semibold mb-4">Data Analytics & Insights</h3>
+          <p>Advanced analytics solutions to uncover trends, monitor KPIs, and support data-driven decision-making across your organization.</p>
         </div>
-
       </div>
     </div>
   </section>
@@ -104,35 +111,22 @@
   <section id="solutions" class="container mx-auto px-6 py-20 bg-white text-gray-900">
     <h2 class="text-4xl font-bold text-center mb-12">Industries & Solutions</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-14 max-w-6xl mx-auto">
-
       <div class="bg-gray-50 rounded-xl p-10 shadow-md hover:shadow-lg transition">
-        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Finance & Fintech</h3>
-        <p class="leading-relaxed">
-          AI-powered risk analysis, fraud detection, algorithmic trading strategies, and personalized financial planning tools.
-        </p>
+        <h3 class="text-2xl font-semibold mb-4">Finance & Fintech</h3>
+        <p>AI-powered risk analysis, fraud detection, algorithmic trading strategies, and personalized financial planning tools.</p>
       </div>
-
       <div class="bg-gray-50 rounded-xl p-10 shadow-md hover:shadow-lg transition">
-        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Healthcare & Life Sciences</h3>
-        <p class="leading-relaxed">
-          Intelligent diagnostics, patient data analytics, workflow automation, and AI-driven clinical decision support systems.
-        </p>
+        <h3 class="text-2xl font-semibold mb-4">Healthcare & Life Sciences</h3>
+        <p>Intelligent diagnostics, patient data analytics, workflow automation, and AI-driven clinical decision support systems.</p>
       </div>
-
       <div class="bg-gray-50 rounded-xl p-10 shadow-md hover:shadow-lg transition">
-        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Education & E-Learning</h3>
-        <p class="leading-relaxed">
-          Personalized learning platforms, predictive analytics to improve student outcomes, and administrative process automation.
-        </p>
+        <h3 class="text-2xl font-semibold mb-4">Education & E-Learning</h3>
+        <p>Personalized learning platforms, predictive analytics to improve student outcomes, and administrative process automation.</p>
       </div>
-
       <div class="bg-gray-50 rounded-xl p-10 shadow-md hover:shadow-lg transition">
-        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Retail & E-Commerce</h3>
-        <p class="leading-relaxed">
-          Customer behavior prediction, inventory optimization, personalized marketing, and sales forecasting solutions.
-        </p>
+        <h3 class="text-2xl font-semibold mb-4">Retail & E-Commerce</h3>
+        <p>Customer behavior prediction, inventory optimization, personalized marketing, and sales forecasting solutions.</p>
       </div>
-
     </div>
   </section>
 
@@ -141,7 +135,7 @@
     <div class="container mx-auto max-w-4xl text-center">
       <h2 class="text-4xl font-bold mb-6">Join Our Team</h2>
       <p class="mb-8 max-w-xl mx-auto">
-        Are you passionate about AI and innovation? At KashNex, we value creativity, collaboration, and continuous learning.  
+        Are you passionate about AI and innovation? At KashNex, we value creativity, collaboration, and continuous learning.
         Explore our current openings and build a career that makes an impact.
       </p>
       <a href="mailto:careers@kashnex.com" class="inline-block bg-gray-700 hover:bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold transition">
@@ -161,21 +155,14 @@
     </a>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer with Social Icons -->
   <footer class="bg-gray-800 text-gray-400 py-8 text-center text-sm">
     <div class="flex justify-center space-x-6 mb-4">
-      <!-- LinkedIn -->
       <a href="https://www.linkedin.com/company/kashnex" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">
-        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-          <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.7v2.2h.1c.7-1.3 2.5-2.6 5.2-2.6 5.6 0 6.6 3.7 6.6 8.5V24h-5v-7.5c0-1.8 0-4-2.5-4s-2.9 2-2.9 4V24h-5V8z"/>
-        </svg>
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.7v2.2h.1c.7-1.3 2.5-2.6 5.2-2.6 5.6 0 6.6 3.7 6.6 8.5V24h-5v-7.5c0-1.8 0-4-2.5-4s-2.9 2-2.9 4V24h-5V8z"/></svg>
       </a>
-      <!-- Instagram -->
       <a href="https://www.instagram.com/kash.nex" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">
-        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-          <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.3 2.3.5.5.2.9.5 1.3.9.4.4.7.8.9 1.3.2.4.4 1 .5 2.3.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.9-.5 2.3-.2.5-.5.9-.9 1.3-.4.4-.8.7-1.3.9-.4.2-1 .4-2.3.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.3-2.3-.5-.5-.2-.9-.5-1.3-.9-.4-.4-.7-.8-.9-1.3-.2-.4-.4-1-.5-2.3-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.9.5-2.3.2-.5.5-.9.9-1.3.4-.4.8-.7 1.3-.9.4-.2 1-.4 2.3-.5 1.3-.1 1.7-.1 4.9-.1m0-2.2C8.7 0 8.3 0 7 .1 5.7.1 4.6.3 3.8.6c-.9.3-1.7.8-2.5 1.5C.6 3 .1 3.9-.2 4.8c-.3.8-.5 1.9-.6 3.2C-.9 9.3-1 9.7-1 12s0 2.7.1 3.9c.1 1.3.3 2.3.6 3.2.3.9.8 1.7 1.5 2.5.8.7 1.6 1.2 2.5 1.5.8.3 1.9.5 3.2.6 1.2.1 1.6.1 3.9.1s2.7 0 3.9-.1c1.3-.1 2.3-.3 3.2-.6.9-.3 1.7-.8 2.5-1.5.7-.8 1.2-1.6 1.5-2.5.3-.8.5-1.9.6-3.2.1-1.2.1-1.6.1-3.9s0-2.7-.1-3.9c-.1-1.3-.3-2.3-.6-3.2-.3-.9-.8-1.7-1.5-2.5C21.4.6 20.6.1 19.7-.2c-.8-.3-1.9-.5-3.2-.6C15.3-.9 14.9-1 12-1z"/>
-          <path d="M12 5.8c-3.4 0-6.2 2.8-6.2 6.2s2.8 6.2 6.2 6.2 6.2-2.8 6.2-6.2-2.8-6.2-6.2-6.2zm0 10.3a4.1 4.1 0 1 1 0-8.2 4.1 4.1 0 0 1 0 8.2zm6.4-10.7a1.4 1.4 0 1 1-2.9 0 1.4 1.4 0 0 1 2.9 0z"/>
-        </svg>
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.3 2.3.5.5.2.9.5 1.3.9.4.4.7.8.9 1.3.2.4.4 1 .5 2.3.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.9-.5 2.3-.2.5-.5.9-.9 1.3-.4.4-.8.7-1.3.9-.4.2-1 .4-2.3.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.3-2.3-.5-.5-.2-.9-.5-1.3-.9-.4-.4-.7-.8-.9-1.3-.2-.4-.4-1-.5-2.3-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.9.5-2.3.2-.5.5-.9.9-1.3.4-.4.8-.7 1.3-.9.4-.2 1-.4 2.3-.5 1.3-.1 1.7-.1 4.9-.1z"/></svg>
       </a>
     </div>
     <p>&copy; 2025 KashNex. All rights reserved.</p>
