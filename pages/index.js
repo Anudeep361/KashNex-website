@@ -1,9 +1,10 @@
+import Head from 'next/head';
 import ChatWidget from '../components/ChatWidget';
 
 export default function Home() {
   return (
     <>
-      <head>
+      <Head>
         <title>KashNex — Empowering Your Future with AI & Strategic Solutions</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -39,7 +40,7 @@ export default function Home() {
             }),
           }}
         />
-      </head>
+      </Head>
 
       <body className="bg-gray-50 font-sans text-gray-900 leading-relaxed">
         {/* Navbar */}
@@ -201,7 +202,23 @@ export default function Home() {
         </footer>
 
         {/* Floating Chat Widget */}
-        <ChatWidget />
+        <div
+          style={{
+            position: 'fixed',
+            bottom: 20,
+            right: 20,
+            width: '350px',
+            maxWidth: '90vw',
+            boxShadow: '0 8px 20px rgba(0,0,0,0.2)',
+            borderRadius: '12px',
+            overflow: 'hidden',
+            zIndex: 9999,
+            fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+            backgroundColor: '#1f2937' // Tailwind's gray-800
+          }}
+        >
+          <ChatWidget />
+        </div>
       </body>
     </>
   );
