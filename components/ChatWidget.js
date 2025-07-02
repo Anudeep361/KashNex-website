@@ -80,7 +80,7 @@ export default function ChatWidget() {
               fontWeight: "bold",
             }}
           >
-            KashNex Chat
+            KashNex ChatBot
             <button
               onClick={() => setOpen(false)}
               style={{
@@ -102,7 +102,7 @@ export default function ChatWidget() {
               overflowY: "auto",
             }}
           >
-            {messages.length === 0 && <p>Say hi to the chatbot!</p>}
+            {messages.length === 0 && <p>Hi, How Can I Assist you Today!</p>}
             {messages.map((msg, i) => (
               <p
                 key={i}
