@@ -42,7 +42,7 @@ export default function Home() {
         />
       </Head>
 
-      <div className="bg-gray-50 font-sans text-gray-900 leading-relaxed">
+      <body className="bg-gray-50 font-sans text-gray-900 leading-relaxed">
         {/* Navbar */}
         <header className="bg-gray-900 text-white shadow-md sticky top-0 z-50">
           <div className="container mx-auto flex items-center justify-between px-6 py-4">
@@ -174,10 +174,9 @@ export default function Home() {
           </a>
         </section>
 
-        {/* Footer */}
+        {/* Footer with Social Icons */}
         <footer className="bg-gray-800 text-gray-400 py-8 text-center text-sm">
           <div className="flex justify-center space-x-6 mb-4">
-            {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/company/kashnex"
               target="_blank"
@@ -188,7 +187,6 @@ export default function Home() {
                 <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.7v2.2h.1c.7-1.3 2.5-2.6 5.2-2.6 5.6 0 6.6 3.7 6.6 8.5V24h-5v-7.5c0-1.8 0-4-2.5-4s-2.9 2-2.9 4V24h-5V8z" />
               </svg>
             </a>
-            {/* Instagram */}
             <a
               href="https://www.instagram.com/kash.nex"
               target="_blank"
@@ -196,14 +194,14 @@ export default function Home() {
               className="hover:text-white transition"
             >
               <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                <path d="M12 2.2c3.2 0 3.6 0 4.9.1..." />
+                <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.3 2.3.5.5.2.9.5 1.3.9.4.4.7.8.9 1.3.2.4.4 1 .5 2.3.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.9-.5 2.3-.2.5-.5.9-.9 1.3-.4.4-.8.7-1.3.9-.4.2-1 .4-2.3.5-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.3-2.3-.5-.5-.2-.9-.5-1.3-.9-.4-.4-.7-.8-.9-1.3-.2-.4-.4-1-.5-2.3-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.9.5-2.3.2-.5.5-.9.9-1.3.4-.4.8-.7 1.3-.9.4-.2 1-.4 2.3-.5 1.3-.1 1.7-.1 4.9-.1z" />
               </svg>
             </a>
           </div>
           <p>&copy; 2025 KashNex. All rights reserved.</p>
         </footer>
 
-        {/* Chat Widget */}
+        {/* Floating Chat Widget */}
         <div
           style={{
             position: 'fixed',
@@ -215,13 +213,13 @@ export default function Home() {
             borderRadius: '12px',
             overflow: 'hidden',
             zIndex: 9999,
-            backgroundColor: '#1f2937',
-            fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
+            fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+            backgroundColor: '#1f2937' // Tailwind's gray-800
           }}
         >
           <ChatWidget />
         </div>
-      </div>
+      </body>
     </>
   );
 }
