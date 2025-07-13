@@ -58,6 +58,8 @@ export default function Home() {
               <a href="#solutions" className="hover:text-white transition">Solutions</a>
               <a href="#careers" className="hover:text-white transition">Careers</a>
               <a href="#contact" className="hover:text-white transition">Contact</a>
+              <a href="/login" className="hover:text-white transition">Login</a>
+              <a href="/signup" className="hover:text-white transition">Sign Up</a>
             </nav>
             <a
               href="mailto:info@kashnex.com"
